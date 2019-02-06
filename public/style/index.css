@@ -1,0 +1,21 @@
+.header{
+    position:fixed;
+    z-index: 1;
+    top: 0; right: 0; bottom: 500; left: 0;
+}
+.display-news{
+    background-color: lightcyan;
+    position: relative;
+    top: 300; right: 30; bottom: 30; left: 30;
+   
+}
+.newscard{
+    position: relative;
+       top: 300; right: 0; bottom: 0; left: 0;
+    border: 15px solid orange;
+    background-color: lightslategray
+}
+.buttons{
+    background-color: cyan;
+    width: 150px;
+}
