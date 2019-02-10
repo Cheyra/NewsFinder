@@ -7,15 +7,54 @@
     background-color: lightcyan;
     position: relative;
     top: 300; right: 30; bottom: 30; left: 30;
-   
+    
+}
+.page-title{
+    font-size: 70px;
+    font-family: 'Major Mono Display', monospace;
+    color:cyan;
 }
 .newscard{
     position: relative;
        top: 300; right: 0; bottom: 0; left: 0;
-    border: 15px solid orange;
+       padding-bottom: 2px;
+    border: 2px solid rgb(68, 68, 114);
     background-color: lightslategray
 }
 .buttons{
     background-color: cyan;
     width: 150px;
+}
+.comment-section{
+    background-color: cyan;
+    border-color:darkcyan;
+    border-style: inset;
+    border: 5px, 5px, 5px, 5px
+}
+.newsTitle{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 40px;
+    background-color: rgb(14, 168, 168);
+    color:whitesmoke;
+}
+newsLink{
+    clear: both;
+}
+
+.newsPic{
+    width:300px;
+height:300px;
+float:left}
+.newsSummary{
+    font-family: 'Source Code Pro', monospace;
+    color:cyan;
+    float:left
+}
+.c-list{
+    background-color: darkcyan;
+    color:whitesmoke;
+}
+.footer{
+    background-color:darkcyan;
+    color:cyan
 }
