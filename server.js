@@ -16,7 +16,7 @@ let articleRouter = require("./controllers/article-routes.js")
 mongoose.Promise = Promise;
 // Initialize Express
 var app = express();
-var port = process.env.PORT
+var port = process.env.PORT || 3000
 var bodyParser = require('body-parser');
 // app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -53,7 +53,7 @@ db.once("open", function() {
 
 // Listen on port 3000
 app.listen(port, function() {
-  console.log("App running on port " + PORT);
+  console.log("App running on port " + port);
 });
 
 
