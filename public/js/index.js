@@ -47,28 +47,28 @@ $("document").ready(function () {
                     newscard.append(commentButton)
                     newscard.append(commentForm)
                     newscard.append(commentsList)
-   //  let check=data[i].comments
-                        // console.log(data)
-                    // $.getJSON("/comment", function(res) {
+    let check=data[i].comments
+                        console.log(data)
+                    $.getJSON("/comment", function(res) {
                          
-                    //         for(let j=0; j<res.length; j++){
-                    //             // console.log(res[j]._id)
-                    //             // console.log(check)
-                    //             let commentCheck= res[j]._id
-                    //             let newcomment = res[j].message
-                    //             for(let j=0; j<check.length; j++){
+                            for(let j=0; j<res.length; j++){
+                                // console.log(res[j]._id)
+                                // console.log(check)
+                                let commentCheck= res[j]._id
+                                let newcomment = res[j].message
+                                for(let j=0; j<check.length; j++){
 
                                 
-                    //  if (commentCheck === check[j]){
-                    //     //  console.log(newcomment)
-                    //       let newcomments = $("<div></div>").text(newcomment)
-                    //       newcomments.addClass("card comment-section my-1")
-                    //     newscard.append(newcomments)
+                     if (commentCheck === check[j]){
+                        //  console.log(newcomment)
+                          let newcomments = $("<div></div>").text(newcomment)
+                          newcomments.addClass("card comment-section my-1")
+                        newscard.append(newcomments)
                       
-                    //  }
-                    //         }
-                    //     }
-                    //     })      
+                     }
+                            }
+                        }
+                        })      
                     $(".news").append(newscard)
                     $(".favorites").hide();
                     $(".news-stuff").show();

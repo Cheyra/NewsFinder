@@ -1,14 +1,14 @@
 // Dependencies
 var express = require("express");
 var exphbs = require("express-handlebars");
-var path = require("path");
-var mongojs = require("mongojs");
+// var path = require("path");
+// var mongojs = require("mongojs");
 // Require request and cheerio. This makes the scraping possible
-var request = require("request");
-var cheerio = require("cheerio");
+// var request = require("request");
+// var cheerio = require("cheerio");
 var mongoose = require("mongoose");
-let Comment = require("./models/Comment.js");
-let Article = require("./models/Article.js");
+// let Comment = require("./models/Comment.js");
+// let Article = require("./models/Article.js");
 // Requiring routing controllers
 let htmlRouter = require("./controllers/html-routes.js");
 let articleRouter = require("./controllers/article-routes.js")
