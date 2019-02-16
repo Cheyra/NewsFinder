@@ -1,8 +1,8 @@
 var express = require("express");
 var request = require("request");
 var cheerio = require("cheerio");
-var Comment = require("../models/Comment.js");
-var Article = require("../models/Article.js");
+var Comment = require("../models/comment.js");
+var Article = require("../models/article.js");
 var router = express.Router();
 
 
