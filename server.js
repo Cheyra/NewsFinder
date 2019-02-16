@@ -10,8 +10,8 @@ var mongoose = require("mongoose");
 // let Comment = require("./models/Comment.js");
 // let Article = require("./models/Article.js");
 // Requiring routing controllers
-let htmlRouter = require("./controllers/html-routes.js");
-let articleRouter = require("./controllers/article-routes.js")
+let htmlRouter = require("./Controllers/html-routes.js");
+let articleRouter = require("./Controllers/article-routes.js")
 // Set mongoose to leverage built in JavaScript ES6 Promises
 mongoose.Promise = Promise;
 // Initialize Express
